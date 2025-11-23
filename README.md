@@ -1,5 +1,9 @@
 # 🩸 Blood Bank Management System
 
+to view the frontend visit the link given below :-
+https://purvanshjoshi.github.io/Blood-Bank-Management-System/
+[NOTE- the server is not currently deployed in any cloud platforms so the backend will not work]
+
 A comprehensive full-stack blood bank management system designed to efficiently manage blood bank operations, donor information, and inventory tracking.
 
 ## 📋 Project Overview
@@ -85,10 +89,12 @@ cd Blood-Bank-Management-System
 ## 💡 Usage
 
 1. **Admin Login**: Access the admin panel with default credentials
-2. **Donor Registration**: Add new donors to the system
-3. **Blood Donation**: Record new blood donations
-4. **Inventory Management**: Monitor and update blood stock
-5. **Request Handling**: Process blood requests from hospitals
+   ID:- Purvansh Joshi
+   PASSWOED:- 12345
+3. **Donor Registration**: Add new donors to the system
+4. **Blood Donation**: Record new blood donations
+5. **Inventory Management**: Monitor and update blood stock
+6. **Request Handling**: Process blood requests from hospitals
 
 ## 📊 Database Schema
 
@@ -129,13 +135,23 @@ This is an academic project, but suggestions and feedback are welcome!
 
 This project is developed for academic purposes.
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
 **Purvansh Joshi**
 - GitHub: [@purvanshjoshi](https://github.com/purvanshjoshi)
 - LinkedIn: [Purvansh Joshi](https://www.linkedin.com/in/purvansh-joshi)
 - Email: purvanshjoshi7534011576@gmail.com
-
+- 
+  **Parth Nailwal**
+- GitHub: 
+- LinkedIn: [Parth Nailwal]
+- Email: parthnailwal2006@gmail.com
+  
+  **Vansh Singh**
+- GitHub: [@purvanshjoshi](https://github.com/purvanshjoshi)
+- LinkedIn: [Vansh Singh](https://www.linkedin.com/in/vansh-singh-805b7b318)
+- Email: vanshsinghGraphicera@gmail.com
+  
 ## 🙏 Acknowledgments
 
 - Graphic Era Hill University for project guidance
@@ -153,4 +169,4 @@ For queries or suggestions, feel free to reach out:
 
 ⭐ **If you find this project helpful, please consider giving it a star!** ⭐
 
-*Developed with ❤️ by Purvansh Joshi*
+*Developed with ❤️ by Purvansh Joshi,Parth Nailwal & Vansh Singh*
