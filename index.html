@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>🩸 Blood Bank</h1>
+                <div class="subtitle">Management System</div>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-item active" onclick="showSection('dashboard')">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button class="nav-item" onclick="showSection('addDonor')">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Add Donor</span>
+                </button>
+                <button class="nav-item" onclick="showSection('searchDonors')">
+                    <i class="fas fa-search"></i>
+                    <span>Search Donors</span>
+                </button>
+                <button class="nav-item" onclick="showSection('viewDonors')">
+                    <i class="fas fa-users"></i>
+                    <span>View Donors</span>
+                </button>
+                <button class="nav-item" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2 id="pageTitle">Dashboard</h2>
+                <div class="user-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Welcome, Admin</span>
+                </div>
+            </header>
+
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="section active">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <h3>Total Donors</h3>
+                        <div class="number" id="totalDonors">0</div>
+                        <p>Registered blood donors</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Available Blood Groups</h3>
+                        <div id="bloodGroupStats" class="blood-group-stats">
+                            <!-- Blood group stats will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add Donor Section -->
+            <section id="addDonor" class="section">
+                <h2>Add New Donor</h2>
+                <form id="addDonorForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="donorName"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="donorName" placeholder="Enter donor's full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorPhone"><i class="fas fa-phone"></i> Phone Number</label>
+                            <div class="phone-input-container">
+                                <span class="phone-prefix">+91</span>
+                                <input type="tel" id="donorPhone" class="phone-input"
+                                       placeholder="Enter 10-digit phone number"
+                                       pattern="[0-9]{10}" maxlength="10" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="donorBloodGroup"><i class="fas fa-tint"></i> Blood Group</label>
+                            <select id="donorBloodGroup" required>
+                                <option value="">Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorAddress"><i class="fas fa-map-marker-alt"></i> Address</label>
+                            <input type="text" id="donorAddress" placeholder="Enter complete address" required>
+                            <button type="button" class="btn btn-secondary" onclick="geocodeAddress()" style="margin-top: 0.5rem;">
+                                <i class="fas fa-map-pin"></i> Get Coordinates
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="donorLatitude"><i class="fas fa-globe"></i> Latitude</label>
+                            <input type="number" id="donorLatitude" step="any" placeholder="e.g., 28.6139" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorLongitude"><i class="fas fa-globe"></i> Longitude</label>
+                            <input type="number" id="donorLongitude" step="any" placeholder="e.g., 77.2090" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save"></i> Add Donor
+                    </button>
+                </form>
+            </section>
+
+            <!-- Search Donors Section -->
+            <section id="searchDonors" class="section">
+                <h2>Search Nearest Donors</h2>
+                <form id="searchDonorsForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="searchBloodGroup"><i class="fas fa-tint"></i> Blood Group</label>
+                            <select id="searchBloodGroup" required>
+                                <option value="">Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="hospitalAddress"><i class="fas fa-hospital"></i> Hospital Address</label>
+                            <input type="text" id="hospitalAddress" placeholder="Enter hospital address" required>
+                            <button type="button" class="btn btn-secondary" onclick="geocodeHospitalAddress()" style="margin-top: 0.5rem;">
+                                <i class="fas fa-map-pin"></i> Get Coordinates
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="hospitalLatitude"><i class="fas fa-globe"></i> Hospital Latitude</label>
+                            <input type="number" id="hospitalLatitude" step="any" placeholder="e.g., 28.6139" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hospitalLongitude"><i class="fas fa-globe"></i> Hospital Longitude</label>
+                            <input type="number" id="hospitalLongitude" step="any" placeholder="e.g., 77.2090" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">
+                        <i class="fas fa-search"></i> Search Nearest Donors
+                    </button>
+                </form>
+                <div id="searchResults" style="margin-top: 2rem;">
+                    <div id="donorsList" style="margin-top: 2rem;"></div>
+                </div>
+            </section>
+
+            <!-- View Donors Section -->
+            <section id="viewDonors" class="section">
+                <h2>View All Donors</h2>
+                <div class="filter-controls">
+                    <label for="filterBloodGroup"><i class="fas fa-filter"></i> Filter by Blood Group:</label>
+                    <select id="filterBloodGroup" onchange="loadDonors()">
+                        <option value="all">All Blood Groups</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div id="donorsTableContainer"></div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

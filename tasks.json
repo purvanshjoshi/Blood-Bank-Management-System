@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Blood Bank with MSVC",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/C",
+        "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cl.exe /EHsc blood_main.cpp delete.cpp add.cpp display.cpp update.cpp search.cpp validation.cpp file_operations.cpp /Fe:blood_main.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/C"]
+        }
+      },
+      "problemMatcher": ["$msCompile"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compile all blood bank cpp files with MSVC Build Tools"
+    }
+  ]
+}
