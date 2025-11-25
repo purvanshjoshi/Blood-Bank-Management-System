@@ -90,7 +90,7 @@ cd Blood-Bank-Management-System
 
 1. **Admin Login**: Access the admin panel with default credentials
    ID:- Purvansh Joshi
-   PASSWOED:- 12345
+   PASSWORD:- 12345
 3. **Donor Registration**: Add new donors to the system
 4. **Blood Donation**: Record new blood donations
 5. **Inventory Management**: Monitor and update blood stock
