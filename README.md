@@ -110,7 +110,7 @@ The system uses a relational database with the following main tables:
 
 **Course**: Project-Based Learning (PBL)
 **Institution**: Graphic Era Hill University (GEHU)
-**Semester**: [Your Semester]
+**Semester**: [ 3rd ]
 **Academic Year**: 2025
 
 ### PBL Implementation
