@@ -1,9 +1,22 @@
 # 🩸 Blood Bank Management System
 
-to view the frontend visit the link given below :-
-https://purvanshjoshi.github.io/Blood-Bank-Management-System/
-[NOTE- the server is not currently deployed in any cloud platforms so the backend will not work]
+## 📚 View
 
+Explore the frontend of this Blood Bank Management System. Note that the backend services are not currently deployed on cloud platforms, so backend functionality is limited to local demonstration.
+
+**Live Demo:** [Blood Bank Management System](https://purvanshjoshi.github.io/Blood-Bank-Management-System/)
+
+### Frontend Features Visible in Demo
+- Interactive user interface with responsive design
+- Donor registration and search interface
+- Blood inventory management dashboard
+- Request management portal
+- User-friendly navigation and forms
+
+### Limitations
+- Backend API calls will not function as the server is not deployed
+- Database operations require local server setup
+- Real-time data synchronization unavailable in demo
 A comprehensive full-stack blood bank management system designed to efficiently manage blood bank operations, donor information, and inventory tracking.
 
 ## 📋 Project Overview
