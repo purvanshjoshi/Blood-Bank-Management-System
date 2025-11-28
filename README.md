@@ -150,21 +150,33 @@ This project is developed for academic purposes.
 
 ## 👨‍💻 Authors
 
-**Purvansh Joshi**
+This project was developed by a dedicated team of Computer Science Engineering students at Graphic Era Hill University (GEHU).
+
+### Team Members
+
+#### Purvansh Joshi
+**Full Stack Developer & Project Lead**
+
+Lead developer focusing on system architecture, backend development, and database design.
 - GitHub: [@purvanshjoshi](https://github.com/purvanshjoshi)
 - LinkedIn: [Purvansh Joshi](https://www.linkedin.com/in/purvansh-joshi)
-- Email: purvanshjoshi7534011576@gmail.com
-- 
-  **Parth Nailwal**
-- GitHub: 
-- LinkedIn: [Parth Nailwal]
-- Email: parthnailwal2006@gmail.com
-  
-  **Vansh Singh**
-- GitHub: [@purvanshjoshi](https://github.com/purvanshjoshi)
+- Email: [purvanshjoshi7534011576@gmail.com](mailto:purvanshjoshi7534011576@gmail.com)
+
+#### Parth Nailwal
+**Frontend Developer & UI/UX Designer**
+
+Responsible for frontend design, user interface implementation, and responsive design.
+- LinkedIn: [Parth Nailwal](https://www.linkedin.com/in/parth-nailwal)
+- Email: [parthnailwal2006@gmail.com](mailto:parthnailwal2006@gmail.com)
+
+#### Vansh Singh  
+**Backend Developer & Database Specialist**
+
+Contributed to backend API development and database optimization.
 - LinkedIn: [Vansh Singh](https://www.linkedin.com/in/vansh-singh-805b7b318)
-- Email: vanshsinghGraphicera@gmail.com
-  
+- Email: [vanshsinghGraphicera@gmail.com](mailto:vanshsinghGraphicera@gmail.com)
+
+---  
 ## 🙏 Acknowledgments
 
 - Graphic Era Hill University for project guidance
