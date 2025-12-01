@@ -223,7 +223,7 @@ Detailed API documentation available in the `/docs` directory:
 - Error codes and messages
 - Usage examples for each endpoint
 
-## 🎯 Future Enhancements
+## 🎯 Future Enhancements--
 
 - [ ] Mobile application (iOS/Android)
 - [ ] Real-time notifications using WebSockets
