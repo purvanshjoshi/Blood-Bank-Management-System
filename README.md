@@ -1,3 +1,10 @@
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub commits](https://img.shields.io/github/commit-activity/m/purvanshjoshi/Blood-Bank-Management-System?color=green)](https://github.com/purvanshjoshi/Blood-Bank-Management-System)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)]()
+[![Code Quality](https://img.shields.io/badge/Code%20Quality-Professional-blueviolet.svg)]()
+[![Documentation](https://img.shields.io/badge/Documentation-Comprehensive-success.svg)]()
+
 # 🩸 Blood Bank Management System
 
 ## 📚 View
