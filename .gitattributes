@@ -1,0 +1,50 @@
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Source code files
+*.cpp text
+*.c text
+*.h text
+*.hpp text
+*.js text
+*.py text
+*.html text
+*.css text
+*.json text
+*.md text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+
+# Documentation
+*.md text diff=markdown
+README.md text diff=markdown
+CHANGELOG.md text diff=markdown
+CONTRIBUTING.md text diff=markdown
+
+# Git configuration
+.gitignore text
+.gitattributes text
+
+# Line endings configuration
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Unix shell scripts
+*.sh text eol=lf
+
+# Configuration and environment files
+*.json text
+*.xml text
+*.yml text
+*.yaml text
+*.env text
+*.cfg text
+*.conf text
