@@ -1,3 +1,40 @@
+/*
+ * Blood Bank Management System - Search Module
+ * 
+ * File: search.cpp
+ * Purpose: Implements donor search and location-based filtering functionality
+ * Author: Blood Bank Team
+ * Version: 1.0
+ * Last Modified: 2025-12-03
+ * 
+ * Description:
+ * This module provides core search functionality for finding donors and blood inventory.
+ * It includes:
+ *  - Donor search by blood group
+ *  - Location-based filtering using latitude/longitude
+ *  - Distance calculation between donors and hospitals
+ *  - JSON serialization of search results for API responses
+ * 
+ * Dependencies:
+ *  - blood_bank.hpp: Core data structures and bank management
+ *  - iostream: Standard I/O operations
+ *  - sstream: String stream for building output
+ *  - iomanip: Output formatting utilities
+ * 
+ * Usage Example:
+ *  string jsonResult = donorToJson(donor, latitude, longitude);
+ * 
+ * Performance Considerations:
+ *  - Distance calculation uses haversine formula for accuracy
+ *  - Results are JSON formatted for direct API response usage
+ *  - Consider caching results for frequently searched locations
+ * 
+ * Notes:
+ *  - All distance values are in kilometers
+ *  - Latitude/Longitude should be in decimal degrees format
+ */
+
+
 #include "blood_bank.hpp"
 #include <iostream>
 #include <iomanip>
@@ -64,4 +101,5 @@ int main(int argc, char* argv[]) {
     std::cout << "}" << std::endl;
     
     return 0;
+
 }
