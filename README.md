@@ -234,4 +234,41 @@ Detailed API documentation available in the `/docs` directory:
 
 ⭐ **If you find this project helpful, please consider giving it a star!** ⭐
 
+## 🔧 Troubleshooting Guide
+
+### Common Installation Issues
+
+#### Issue 1: Database Connection Error
+**Problem**: "Connection refused" when trying to connect to database
+- Ensure MySQL/PostgreSQL is running
+- Check credentials in configuration file
+- Verify database exists and is properly initialized
+- Check firewall settings
+
+#### Issue 2: XAMPP/WAMP Server Not Starting
+**Problem**: Web server fails to start
+- Check if ports 80/443 are already in use
+- Run as administrator
+- Review error logs in server folder
+- Restart system if necessary
+
+#### Issue 3: Frontend Not Loading
+**Problem**: Blank page or 404 errors
+- Verify file structure matches expected layout
+- Check browser console for JavaScript errors
+- Clear browser cache (Ctrl+Shift+Delete)
+- Test with different browser
+
+### Performance Optimization Tips
+- Enable query caching for frequently accessed data
+- Implement pagination for large result sets  
+- Use database indexes on frequently queried columns
+- Minimize CSS/JavaScript files for production
+
+### Getting Help
+If issues persist:
+1. Check the `/docs` directory for detailed documentation
+2. Review project GitHub issues for similar problems
+3. Contact project maintainers at [purvanshjoshi7534011576@gmail.com](mailto:purvanshjoshi7534011576@gmail.com)
+
 *Developed with ❤️ by Purvansh Joshi,Parth Nailwal & Vansh Singh*
