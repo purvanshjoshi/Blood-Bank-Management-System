@@ -279,3 +279,12 @@ If issues persist:
 3. Contact project maintainers at [purvanshjoshi7534011576@gmail.com](mailto:purvanshjoshi7534011576@gmail.com)
 
 *Developed with ❤️ by Purvansh Joshi,Parth Nailwal & Vansh Singh*
+
+
+## 🚀 Roadmap for Enhancements
+
+- [ ] Cloud deployment support with AWS/Azure
+- [ ] Real-time notifications for critical updates
+- [ ] Mobile app integration
+- [ ] Advanced analytics dashboard
+- [ ] AI-based blood matching algorithm
