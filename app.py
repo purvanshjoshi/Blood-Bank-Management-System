@@ -1,3 +1,21 @@
+"""
+Blood Bank Management System - Main Application Module
+
+This module contains the core Flask application setup and configuration for the 
+Blood Bank Management System. It initializes the Flask app with CORS support,
+handles environment configuration, and sets up the main application routing.
+
+Key Features:
+    - Flask-based web framework
+    - CORS configuration for cross-origin requests
+    - Multi-platform executable support (Windows/Linux)
+    - Modular path configuration for backend and frontend components
+
+Author: Purvansh Joshi, Parth Maliwal, Vansh Singh
+Date: 2025
+Version: 1.0.0
+"""
+
 from flask import Flask, request, jsonify, send_from_directory, render_template_string
 from flask_cors import CORS
 import subprocess
@@ -286,4 +304,5 @@ if __name__ == '__main__':
     print("Or directly to login: http://localhost:5000/login")
     print("Login credentials: Username: 'purvansh joshi', Password: '12345'")
     
+
     app.run(debug=True, host='0.0.0.0', port=5000)
