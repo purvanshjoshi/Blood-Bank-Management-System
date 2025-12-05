@@ -285,6 +285,71 @@ If issues persist:
 
 - [ ] Cloud deployment support with AWS/Azure
 - [ ] Real-time notifications for critical updates
+
+## 🔧 Installation & Setup Guide
+
+### Prerequisites
+- Node.js (v14.0 or higher)
+- npm or yarn package manager
+- MySQL/MariaDB server (v5.7 or higher)
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+
+### Backend Setup
+```bash
+# Clone the repository
+git clone https://github.com/purvanshjoshi/Blood-Bank-Management-System.git
+cd Blood-Bank-Management-System
+
+# Install dependencies
+npm install
+
+# Configure environment variables
+cp .env.example .env
+# Edit .env with your database credentials
+
+# Initialize database
+npm run db:migrate
+npm run db:seed
+
+# Start the server
+npm start
+```
+
+### Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## 📊 Database Schema
+
+The system uses normalized database design with the following main entities:
+- **Donors** - Donor registration and profile management
+- **Blood_Inventory** - Blood stock tracking and management
+- **Blood_Requests** - Request processing and fulfillment
+- **Transactions** - Donation and distribution records
+- **Users** - User management and authentication
+
+## 🤝 Contributing
+
+Contributions are welcome! Please refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see [LICENSE](./LICENSE) file for details.
+
+## 👨‍💼 Project Team
+
+**Developed with ❤️ by Purvansh Joshi, Parth Maliwal & Vansh Singh**
+
+For questions or suggestions, feel free to reach out!
 - [ ] Mobile app integration
 - [ ] Advanced analytics dashboard
 - [ ] AI-based blood matching algorithm
