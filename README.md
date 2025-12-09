@@ -350,6 +350,6 @@ This project is licensed under the MIT License - see [LICENSE](./LICENSE) file f
 **Developed with ❤️ by Purvansh Joshi, Parth Maliwal & Vansh Singh**
 
 For questions or suggestions, feel free to reach out!
-- [ ] Mobile app integration.
+- [ ] Mobile app integration
 - [ ] - [ ] Advanced analytics dashboard
 - [ ] AI-based blood matching algorithm
