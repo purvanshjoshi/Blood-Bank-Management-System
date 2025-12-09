@@ -351,5 +351,5 @@ This project is licensed under the MIT License - see [LICENSE](./LICENSE) file f
 
 For questions or suggestions, feel free to reach out!
 - [ ] Mobile app integration.
-- [ ] - [ ] Advanced analytics dashboard.
+- [ ] - [ ] Advanced analytics dashboard
 - [ ] AI-based blood matching algorithm
