@@ -9,7 +9,10 @@
 
 ## 📚 View
 
-Explore the frontend of this Blood Bank Management System. Note that the backend services are not currently deployed on cloud platforms, so backend functionality is limited to local demonstration.
+
+https://github.com/user-attachments/assets/5df94397-3a20-47e3-a9a0-5b84b281deeb
+
+Explore the frontend of this  Blood Bank Management System. Note that the backend services are not currently deployed on cloud platforms, so backend functionality is limited to local demonstration.
 
 **Live Demo:** [Blood Bank Management System](https://purvanshjoshi.github.io/Blood-Bank-Management-System/)
 
